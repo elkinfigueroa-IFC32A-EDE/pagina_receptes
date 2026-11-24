@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+#logo1{
+    padding-left: 15px;
+}
+
+#logo2{
+    padding-right: 15px;
+}
+
+nav{
+    display: flex;
+    width: 1400px;
+    height: 50px;
+    background-color: aliceblue;
+}
+
+.principal{
+    background-image: url(i/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    align-content: center;
+    text-align: left;
+}
+
+.caja1{
+    padding-left: 50px;
+}   
+
+h1{
+    font-size: 65px;
+    width: 1000px;
+    padding-bottom: 10px;
+}
+
+.arriba{
+    align-content: center;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color:black;
+}
+
+#recetas{
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+    border: solid 3px;
+    border-radius: 25px;
+    border-color: salmon;
+    color: salmon;
+    text-decoration: none;
+}
+
+.categorias{
+    width: 100vw;
+    align-items: center;
+    background-color: aqua;
+}
+
+.articulo1{
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    width: fit-content;
+    height: fit-content;
+    margin: 50px;
+    text-align: left;
+}
+
+h2{
+    text-align: left;
+}
+
+h3{
+    padding-bottom: 2px;
+}
+ 
+h4{
+    padding-bottom: 10px;
+}
+
+.texto{
+    width: 650px;
+    padding-bottom: 20px;
+}
+
+.caja2{
+    background-color: chocolate;
+    margin: 50px;
+    text-align: left;
+}
