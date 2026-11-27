@@ -1,17 +1,39 @@
+/* ===== Reset ===== */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* ===== Base ===== */
 body{
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+a{
+    text-decoration: none;
+}
+
+h3{
+    padding-bottom: 2px;
+}
+
+h4{
+    padding-bottom: 10px;
+}
+
+/* ===== Header / menú ===== */
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: aqua;
+    width: 100vw;
+    border-bottom: solid 1px;
 }
 
 #logo1{
@@ -24,34 +46,11 @@ header{
 
 nav{
     display: flex;
-    width: 1400px;
-    height: 50px;
+    width: 80vw;
+    height: 5vh;
 }
 
-.principal{
-    background-image: url(i/background.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    align-content: center;
-    text-align: left;
-}
-
-.caja1{
-    padding-left: 50px;
-}   
-
-h1{
-    font-size: 65px;
-    width: 1000px;
-    padding-bottom: 10px;
-}
-
-a{
-    text-decoration: none;
-}
-
-.arriba{
+.menu-item{
     align-content: center;
     height: 50px;
     margin-right: 20px;
@@ -59,7 +58,28 @@ a{
     color:black;
 }
 
-#recetas{
+/* ===== Hero (sección principal) ===== */
+.hero{
+    background-image: url(i/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    align-content: center;
+    text-align: left;
+}
+
+.hero-contenido{
+    padding-left: 50px;
+}   
+
+h1{
+    font-size: 65px;
+    width: 45vw;
+    padding-bottom: 10px;
+}
+
+.btn-receta{
     font-size: 20px;
     padding: 5px 15px 5px 15px;
     border: solid 3px;
@@ -68,21 +88,24 @@ a{
     color: salmon;
 }
 
-.categorias{
+/* ===== Categorías ===== */
+.categorias-nav{
     width: 100vw;
     align-items: center;
     border-color: black;
     border-bottom: solid 1px
 }
 
-.subsub{
-    text-align: left;
+/* ===== Lista de recetas ===== */
+.titulo-seccion{
+    padding-top: 25px;
     padding-left: 15px;
+    text-align: left;
 }
 
-.articulo1{
+.recetas-lista{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 section{
@@ -92,66 +115,57 @@ section{
     text-align: left;
 }
 
-.sub{
-    padding-top: 25px;
-    padding-left: 15px;
-    text-align: left;
-}
-
-h3{
-    padding-bottom: 2px;
-}
- 
-h4{
-    padding-bottom: 10px;
-}
-
-.texto1{
+.receta-descripcion{
     width: 650px;
     padding-bottom: 20px;
 }
 
-.texto2{
-    padding-left: 15px;
-}
-
-
-.caja2{
+/* ===== Newsletter ===== */
+.newsletter{
     display: flex;
     background-color: chocolate;
-    margin: 50px;
-    text-align: left;
-    align-content: center;
     flex-direction: row;
     justify-content: space-between;
-    width: 95vw;
-    height: 10vw;
+    width: 75vw;
+    height: 15vh;
     border-radius: 15px;
 }
 
-.caja3{
-    border: solid 2px blanchedalmond;
-    border-radius: 15px;
-    height: 65px;
-    margin: auto;
-    text-align: center; 
-    align-content: center;
-}
-
-.caja4{
+.newsletter-texto{
     text-align: center;
     align-content: center;
 }
 
+.newsletter-titulo{
+    text-align: left;
+    padding-left: 25px;
+}
+
+.newsletter-descripcion{
+    padding-left: 25px;
+}
+
+.newsletter-botones{
+    border: solid 2px blanchedalmond;
+    border-radius: 15px;
+    margin: auto;
+}
+
+/* ===== Inputs ===== */
 input{
     background-color: transparent;
     cursor: pointer;
     border: 0px;
-    width: 160px;
-    height: 65px;
+    width: 8vw;
+    height: 6.8vh;
     border-radius: 10px;
 }
 
 input:hover{
     background-color: blanchedalmond;
 }
+
+a:hover{
+    background-color: blanchedalmond;
+}
+
